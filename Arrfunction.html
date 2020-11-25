@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let arr1 = new Array("Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus");
+        let arr2 = new Array("UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "leo");
+        let star = prompt("nhap ngoi sao");
+        function fswap(star) {
+            for (let i = 0; i < arr1.length; i++){
+                        if (star==arr1[i]){
+                            arr1[i]=star;
+                            for (let j = i; j <arr2.length; j++){
+                        arr1[i] = arr2[j];
+                        star = arr2[j];
+                          return star;
+                    }
+
+                }else {
+                            star = prompt("nhap ngoi sao");
+                        }
+
+            }
+        }
+        console.log("trom sao tuong ung la " + fswap(star))
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
